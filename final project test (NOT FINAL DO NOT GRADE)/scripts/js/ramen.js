@@ -1,14 +1,21 @@
+
 function drawfirst(){
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("canvas2");
     let ctx = canvas.getContext("2d"); 
     canvas.style.backgroundColor = 'white';
     
-        
+if (canvas.getContext) {
+    ctx = canvas.getContext('2d');
+    } else {
+        const para = document.querySelector('.unsupported');
+        para.textContent = 'Browser unsupported for HTML5 Canvas';
+    }
+
     //////////- background rectangle
     ctx.fillStyle = "red";
     ctx.fillRect(150, 0, 300, 400);
 }
-drawfirst()
+drawfirst();
 
 
 
@@ -16,42 +23,33 @@ drawfirst()
 
 //---------------------RAMON NOODLES--------------------//
 
-function drawS1(){
-    const canvas = document.getElementById("canvas");
+function drawNoodles(){
+    const canvas = document.getElementById("canvas2");
     let ctx = canvas.getContext("2d"); 
-    canvas.style.backgroundColor = 'white';
     
         
     //////////- straight noodles
-    ctx.fillStyle = "red";
-    ctx.fillRect(150, 0, 300, 400);
-}
-drawS1()
+    ctx.fillStyle = "yellow";
+    ctx.fillRect(165, 133, 13, 250);
 
-
-function drawS2(){
-    const canvas = document.getElementById("canvas");
-    let ctx = canvas.getContext("2d"); 
-    canvas.style.backgroundColor = 'white';
+    ctx.fillStyle = "yellow";
+    ctx.fillRect(190, 133, 13, 250);
     
-    ctx.strokeStyle = "blue";
-    ctx.strokeRect(5, 5, 50, 50);
-    ctx.lineWidth = 5;
-
-
+    ctx.fillStyle = "yellow";
+    ctx.fillRect(215, 133, 13, 250);
 }
-drawS2()
+drawNoodles();
+
 
 //-------FIRST bunch---//
+
 function drawY1(){
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("canvas2");
     let ctx = canvas.getContext("2d");
-    canvas.style.backgroundColor = 'white';
     
     ctx.beginPath();
     centerX = canvas.width / 1.75;
     centerY = canvas.height / 1.25;
-    
     //-SIZE or circle
     const radius = 125;
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
@@ -59,14 +57,13 @@ function drawY1(){
     ctx.fill();
     ctx.strokeStyle = "yellow";
     ctx.stroke();
-    }
-    drawY1()
+}
+ drawY1();
     
     
  function drawR1(){
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("canvas2");
     let ctx = canvas.getContext("2d");     
-    canvas.style.backgroundColor = 'white';
     
     ctx.beginPath();
     centerX = canvas.width / 1.75;
@@ -78,61 +75,57 @@ function drawY1(){
     ctx.fill();
     ctx.strokeStyle = "red";
     ctx.stroke();
-    }
-    drawR1();
+}
+drawR1();
     
     
 function drawY2(){
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("canvas2");
     let ctx = canvas.getContext("2d");        
-    canvas.style.backgroundColor = 'white';
+
         
-        //////////- ramen
-        ctx.beginPath();
-        centerX = canvas.width / 1.75;
-        centerY = canvas.height / 1.25;
-        
-        //-SIZE or circle
-        const radius = 95;
-        ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
-        ctx.fillStyle = "yellow";
-        ctx.fill();
-        ctx.strokeStyle = "yellow";
-        ctx.stroke();
-        }
-        drawY2()
-    
-    
-function drawR2(){
-    const canvas = document.getElementById("canvas");
-        let ctx = canvas.getContext("2d");            
-        canvas.style.backgroundColor = 'white';
-        
-        ctx.beginPath();
-        centerX = canvas.width / 1.75;
-        centerY = canvas.height / 1.25;
-        //-SIZE or circle
-        const radius = 80;
-        ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
-        ctx.fillStyle = "red";
-        ctx.fill();
-        ctx.strokeStyle = "red";
-        ctx.stroke();
-        
-        }
-        drawR2();
-    
-    
-function drawY3(){
-    const canvas = document.getElementById("canvas");
-    let ctx = canvas.getContext("2d");
-    canvas.style.backgroundColor = 'white';
-            
     //////////- ramen
     ctx.beginPath();
     centerX = canvas.width / 1.75;
     centerY = canvas.height / 1.25;
+        
+    //-SIZE or circle
+    const radius = 95;
+    ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+    ctx.fillStyle = "yellow";
+    ctx.fill();
+    ctx.strokeStyle = "yellow";
+    ctx.stroke();
+}
+drawY2();
+    
+    
+function drawR2(){
+    const canvas = document.getElementById("canvas2");
+    let ctx = canvas.getContext("2d");            
+        
+    ctx.beginPath();
+    centerX = canvas.width / 1.75;
+    centerY = canvas.height / 1.25;
+    //-SIZE or circle
+    const radius = 80;
+    ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+    ctx.fillStyle = "red";
+    ctx.fill();
+    ctx.strokeStyle = "red";
+    ctx.stroke();
+}
+drawR2();
+    
+    
+function drawY3(){
+    const canvas = document.getElementById("canvas2");
+    let ctx = canvas.getContext("2d");
             
+    //////////- ramen
+    ctx.beginPath();
+    centerX = canvas.width / 1.75;
+    centerY = canvas.height / 1.25;       
     //-SIZE or circle
     const radius = 65;
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
@@ -140,19 +133,17 @@ function drawY3(){
     ctx.fill();
     ctx.strokeStyle = "yellow";
     ctx.stroke();
-    }
-    drawY3()
+}
+drawY3();
         
     
 function drawR3(){
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("canvas2");
     let ctx = canvas.getContext("2d");
-    canvas.style.backgroundColor = 'white';
             
     ctx.beginPath();
     centerX = canvas.width / 1.75;
     centerY = canvas.height / 1.25;
-
     //-SIZE or circle
     const radius = 50;
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
@@ -160,20 +151,18 @@ function drawR3(){
     ctx.fill();
     ctx.strokeStyle = "red";
     ctx.stroke();
-    }
-    drawR3();
+}
+drawR3();
             
     
 function drawY4(){
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("canvas2");
     let ctx = canvas.getContext("2d");
-    canvas.style.backgroundColor = 'white';
                 
     /////////- ramen
     ctx.beginPath();
     centerX = canvas.width / 1.75;
-    centerY = canvas.height / 1.25;
-                
+    centerY = canvas.height / 1.25;         
     //-SIZE or circle
     const radius = 35;
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
@@ -181,14 +170,13 @@ function drawY4(){
     ctx.fill();
     ctx.strokeStyle = "yellow";
     ctx.stroke();
-    }
-    drawY4()
+}
+drawY4();
             
             
 function drawR4(){
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("canvas2");
     let ctx = canvas.getContext("2d"); 
-    canvas.style.backgroundColor = 'white';
                 
     ctx.beginPath();
     centerX = canvas.width / 1.75;
@@ -200,20 +188,20 @@ function drawR4(){
     ctx.fill();
     ctx.strokeStyle = "red";
     ctx.stroke();
-    }
-    drawR4();
+}
+drawR4();
+
 
 
 //-------SECOND bunch---//
+
 function drawY5(){
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("canvas2");
     let ctx = canvas.getContext("2d");
-    canvas.style.backgroundColor = 'white';
     
     ctx.beginPath();
     centerX = canvas.width / 2.25;
     centerY = canvas.height / 1;
-    
     //-SIZE or circle
     const radius = 125;
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
@@ -221,14 +209,13 @@ function drawY5(){
     ctx.fill();
     ctx.strokeStyle = "yellow";
     ctx.stroke();
-    }
-    drawY5()
+}
+drawY5();
     
     
  function drawR5(){
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("canvas2");
     let ctx = canvas.getContext("2d");     
-    canvas.style.backgroundColor = 'white';
     
     ctx.beginPath();
     centerX = canvas.width / 2.25;
@@ -240,61 +227,57 @@ function drawY5(){
     ctx.fill();
     ctx.strokeStyle = "red";
     ctx.stroke();
-    }
-    drawR5();
+}
+drawR5();
     
     
 function drawY6(){
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("canvas2");
     let ctx = canvas.getContext("2d");        
-    canvas.style.backgroundColor = 'white';
         
-        //////////- ramen
-        ctx.beginPath();
-        centerX = canvas.width / 2.25;
-    centerY = canvas.height / 1;
-        
-        //-SIZE or circle
-        const radius = 95;
-        ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
-        ctx.fillStyle = "yellow";
-        ctx.fill();
-        ctx.strokeStyle = "yellow";
-        ctx.stroke();
-        }
-        drawY6()
-    
-    
-function drawR6(){
-    const canvas = document.getElementById("canvas");
-        let ctx = canvas.getContext("2d");            
-        canvas.style.backgroundColor = 'white';
-        
-        ctx.beginPath();
-        centerX = canvas.width / 2.25;
-        centerY = canvas.height / 1;
-        //-SIZE or circle
-        const radius = 80;
-        ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
-        ctx.fillStyle = "red";
-        ctx.fill();
-        ctx.strokeStyle = "red";
-        ctx.stroke();
-        
-        }
-        drawR6();
-    
-    
-function drawY7(){
-    const canvas = document.getElementById("canvas");
-    let ctx = canvas.getContext("2d");
-    canvas.style.backgroundColor = 'white';
-            
     //////////- ramen
     ctx.beginPath();
     centerX = canvas.width / 2.25;
     centerY = canvas.height / 1;
+        
+    //-SIZE or circle
+    const radius = 95;
+    ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+    ctx.fillStyle = "yellow";
+    ctx.fill();
+    ctx.strokeStyle = "yellow";
+    ctx.stroke();
+}
+drawY6();
+    
+    
+function drawR6(){
+    const canvas = document.getElementById("canvas2");
+    let ctx = canvas.getContext("2d");            
+        
+    ctx.beginPath();
+    centerX = canvas.width / 2.25;
+    centerY = canvas.height / 1;
+    //-SIZE or circle
+    const radius = 80;
+    ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+    ctx.fillStyle = "red";
+    ctx.fill();
+    ctx.strokeStyle = "red";
+    ctx.stroke();
+        
+}
+drawR6();
+    
+    
+function drawY7(){
+    const canvas = document.getElementById("canvas2");
+    let ctx = canvas.getContext("2d");
             
+    //////////- ramen
+    ctx.beginPath();
+    centerX = canvas.width / 2.25;
+    centerY = canvas.height / 1;    
     //-SIZE or circle
     const radius = 65;
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
@@ -302,19 +285,17 @@ function drawY7(){
     ctx.fill();
     ctx.strokeStyle = "yellow";
     ctx.stroke();
-    }
-    drawY7()
+}
+drawY7();
         
     
 function drawR7(){
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("canvas2");
     let ctx = canvas.getContext("2d");
-    canvas.style.backgroundColor = 'white';
             
     ctx.beginPath();
     centerX = canvas.width / 2.25;
     centerY = canvas.height / 1;
-
     //-SIZE or circle
     const radius = 50;
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
@@ -322,14 +303,13 @@ function drawR7(){
     ctx.fill();
     ctx.strokeStyle = "red";
     ctx.stroke();
-    }
-    drawR7();
+}
+drawR7();
             
     
 function drawY8(){
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("canvas2");
     let ctx = canvas.getContext("2d");
-    canvas.style.backgroundColor = 'white';
                 
     /////////- ramen
     ctx.beginPath();
@@ -343,14 +323,13 @@ function drawY8(){
     ctx.fill();
     ctx.strokeStyle = "yellow";
     ctx.stroke();
-    }
-    drawY8()
+}
+drawY8();
             
             
 function drawR8(){
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("canvas2");
     let ctx = canvas.getContext("2d"); 
-    canvas.style.backgroundColor = 'white';
                 
     ctx.beginPath();
     centerX = canvas.width / 2.25;
@@ -362,56 +341,51 @@ function drawR8(){
     ctx.fill();
     ctx.strokeStyle = "red";
     ctx.stroke();
-    }
-    drawR8();
+}
+drawR8();
 
 
 //-------last bunch---//
 function drawY9(){
-const canvas = document.getElementById("canvas");
-let ctx = canvas.getContext("2d");
-canvas.style.backgroundColor = 'white';
+    const canvas = document.getElementById("canvas2");
+    let ctx = canvas.getContext("2d");
 
-ctx.beginPath();
-centerX = canvas.width / 1.5;
-centerY = canvas.height / 1;
+    ctx.beginPath();
+    centerX = canvas.width / 1.5;
+    centerY = canvas.height / 1;
 
-//-SIZE or circle
-const radius = 125;
-ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
-ctx.fillStyle = "yellow";
-ctx.fill();
-ctx.strokeStyle = "yellow";
-ctx.stroke();
+    //-SIZE or circle
+    const radius = 125;
+    ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+    ctx.fillStyle = "yellow";
+    ctx.fill();
+    ctx.strokeStyle = "yellow";
+    ctx.stroke();
 }
-drawY9()
+drawY9();
 
 
 function drawR9(){
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("canvas2");
     let ctx = canvas.getContext("2d");
-    
-    canvas.style.backgroundColor = 'white';
 
-ctx.beginPath();
-centerX = canvas.width / 1.5;
-centerY = canvas.height / 1;
-//-SIZE or circle
-const radius = 110;
-ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
-ctx.fillStyle = "red";
-ctx.fill();
-ctx.strokeStyle = "red";
-ctx.stroke();
+    ctx.beginPath();
+    centerX = canvas.width / 1.5;
+    centerY = canvas.height / 1;
+    //-SIZE or circle
+    const radius = 110;
+    ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+    ctx.fillStyle = "red";
+    ctx.fill();
+    ctx.strokeStyle = "red";
+    ctx.stroke();
 }
 drawR9();
 
 
 function drawY10(){
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("canvas2");
     let ctx = canvas.getContext("2d");
-    
-    canvas.style.backgroundColor = 'white';
     
     //////////- ramen
     ctx.beginPath();
@@ -425,14 +399,13 @@ function drawY10(){
     ctx.fill();
     ctx.strokeStyle = "yellow";
     ctx.stroke();
-    }
-    drawY10()
+}
+drawY10();
 
 
 function drawR10(){
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("canvas2");
     let ctx = canvas.getContext("2d"); 
-    canvas.style.backgroundColor = 'white';
     
     ctx.beginPath();
     centerX = canvas.width / 1.5;
@@ -444,120 +417,135 @@ function drawR10(){
     ctx.fill();
     ctx.strokeStyle = "red";
     ctx.stroke();
-    
-    }
-    drawR10();
+}
+drawR10();
 
 
 function drawY11(){
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("canvas2");
     let ctx = canvas.getContext("2d");
-    canvas.style.backgroundColor = 'white';
         
-        //////////- ramen
-        ctx.beginPath();
-        centerX = canvas.width / 1.5;
-        centerY = canvas.height / 1;
+    //////////- ramen
+    ctx.beginPath();
+    centerX = canvas.width / 1.5;
+    centerY = canvas.height / 1;
         
-        //-SIZE or circle
-        const radius = 65;
-        ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
-        ctx.fillStyle = "yellow";
-        ctx.fill();
-        ctx.strokeStyle = "yellow";
-        ctx.stroke();
-        }
-        drawY11()
+    //-SIZE or circle
+    const radius = 65;
+    ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+    ctx.fillStyle = "yellow";
+    ctx.fill();
+    ctx.strokeStyle = "yellow";
+    ctx.stroke();
+}
+drawY11();
     
 
 function drawR11(){
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("canvas2");
     let ctx = canvas.getContext("2d");
-    canvas.style.backgroundColor = 'white';
         
-        ctx.beginPath();
-        centerX = canvas.width / 1.5;
-        centerY = canvas.height / 1;
-        //-SIZE or circle
-        const radius = 50;
-        ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
-        ctx.fillStyle = "red";
-        ctx.fill();
-        ctx.strokeStyle = "red";
-        ctx.stroke();
-        }
-        drawR11();
+    ctx.beginPath();
+    centerX = canvas.width / 1.5;
+    centerY = canvas.height / 1;
+    //-SIZE or circle
+    const radius = 50;
+    ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+    ctx.fillStyle = "red";
+    ctx.fill();
+    ctx.strokeStyle = "red";
+    ctx.stroke();
+}
+drawR11();
         
 
 function drawY12(){
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("canvas2");
     let ctx = canvas.getContext("2d");
-    canvas.style.backgroundColor = 'white';
             
-        //////////- ramen
-        ctx.beginPath();
-        centerX = canvas.width / 1.5;
-        centerY = canvas.height / 1;
+    //////////- ramen
+    ctx.beginPath();
+    centerX = canvas.width / 1.5;
+    centerY = canvas.height / 1;
             
-        //-SIZE or circle
-        const radius = 35;
-        ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
-        ctx.fillStyle = "yellow";
-        ctx.fill();
-        ctx.strokeStyle = "yellow";
-        ctx.stroke();
-        }
-        drawY12()
+    //-SIZE or circle
+    const radius = 35;
+    ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+    ctx.fillStyle = "yellow";
+    ctx.fill();
+    ctx.strokeStyle = "yellow";
+    ctx.stroke();
+}
+drawY12();
         
         
 function drawR12(){
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("canvas2");
     let ctx = canvas.getContext("2d");
-    canvas.style.backgroundColor = 'white';
             
-        ctx.beginPath();
-        centerX = canvas.width / 1.5;
-        centerY = canvas.height / 1;
-        //-SIZE or circle
-        const radius = 20;
-        ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
-        ctx.fillStyle = "red";
-        ctx.fill();
-        ctx.strokeStyle = "red";
-        ctx.stroke();
-        }
-        drawR12();
+    ctx.beginPath();
+    centerX = canvas.width / 1.5;
+    centerY = canvas.height / 1;
+    //-SIZE or circle
+    const radius = 20;
+    ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+    ctx.fillStyle = "red";
+    ctx.fill();
+    ctx.strokeStyle = "red";
+    ctx.stroke();
+}
+drawR12();
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//-----------------CHOPSTICKS AND BORDERS-----------
 
 function drawlast(){
-const canvas = document.getElementById("canvas");
+const canvas = document.getElementById("canvas2");
 let ctx = canvas.getContext("2d");
 
-canvas.style.backgroundColor = 'white';
-
-    
-    ///////////- coverup rectangle
+    ///////////- coverup rectangles
     ctx.fillStyle = "salmon";
     ctx.fillRect(0, 0, 150, 400);
-    
+
     ctx.fillStyle = "salmon";
     ctx.fillRect(450, 0, 150, 400);
-    }
-    drawlast();
+}
+drawlast();
+
+
+function drawChop1(){
+    const canvas = document.getElementById("canvas2");
+    let ctx = canvas.getContext("2d"); 
+    
+    ctx.beginPath();
+    const centerX = canvas.width/2;
+    const centerY = canvas.height/2;
+    //top point
+    ctx.moveTo(centerX + 200, centerY - 95);
+    //right point
+    ctx.lineTo(centerX + 210, centerY - 75);
+    //left point
+    ctx.lineTo(centerX - 165, centerY - 65);
+    ctx.fillStyle = "black";
+    ctx.fill();
+}
+drawChop1();
+
+function drawChop2(){
+    const canvas = document.getElementById("canvas2");
+    let ctx = canvas.getContext("2d"); 
+    
+    ctx.beginPath();
+    const centerX = canvas.width/2;
+    const centerY = canvas.height/2;
+    //top point
+    ctx.moveTo(centerX + 215, centerY - 130);
+    //right point
+    ctx.lineTo(centerX + 230, centerY - 115);
+    //left point
+    ctx.lineTo(centerX - 175, centerY - 55);
+    ctx.fillStyle = "black";
+    ctx.fill();
+}
+drawChop2();
