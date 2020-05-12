@@ -1,56 +1,24 @@
+//-----------------------MAGENTA CIRCLE----------
 function drawM(){
-    const canvas = document.getElementById("canvas");
+    const canvas = document.getElementById("canvas3");
     let ctx = canvas.getContext("2d");
     canvas.style.backgroundColor = 'white';
     
     
     ctx.beginPath();
-    const centerX = canvas.width / 1;
-    const centerY = canvas.height / 2;
+    const radius = 110;
+//------ROW 1
+    ctx.arc(300, 0, radius, 0, Math.PI * 2);
+//------ROW 2
+    ctx.arc(0, 200, radius, 0, Math.PI * 2);
+    ctx.arc(450, 200, radius, 0, Math.PI * 2);
+//------ROW 3 
+    ctx.arc(150, 400, radius, 0, Math.PI * 2);
+    ctx.arc(600, 400, radius, 0, Math.PI * 2);
     
-    const radius = 120;
     
-    ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
-    ctx.fillStyle = "magenta";
+    
+    ctx.fillStyle = "rgb(255, 0, 255, 0.5)";
     ctx.fill();
-    ctx.stroke();
-    }
-    drawM();
-    
-function drawY(){
-    const canvas = document.getElementById("canvas");
-    let ctx = canvas.getContext("2d");
-    
-    
-    
-    ctx.beginPath();
-    const centerX = canvas.width / 2;
-    const centerY = canvas.height / 1;
-    
-    const radius = 70;
-    
-    ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
-    ctx.fillStyle = "yellow";
-    ctx.fill();
-    ctx.stroke();
-    }
-    drawY();
-
-function drawC(){
-    const canvas = document.getElementById("canvas");
-    let ctx = canvas.getContext("2d");
-    
-    
-    
-    ctx.beginPath();
-    const centerX = canvas.width / 2.5;
-    const centerY = canvas.height / 2;
-    
-    const radius = 50;
-    
-    ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
-    ctx.fillStyle = "cyan";
-    ctx.fill();
-    ctx.stroke();
-    }
-    drawC();
+}
+drawM();

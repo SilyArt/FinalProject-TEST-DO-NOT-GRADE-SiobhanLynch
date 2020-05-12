@@ -51,21 +51,7 @@ draw();
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//----------------------------------RAMON NOODLES---------------------------//
+//---------------------RAMON NOODLES--------------------//
 
 function drawfirst(){
     const canvas = document.getElementById("canvas2");
@@ -118,8 +104,6 @@ function drawY1(){
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
     ctx.fillStyle = "yellow";
     ctx.fill();
-    ctx.strokeStyle = "yellow";
-    ctx.stroke();
 }
  drawY1();
     
@@ -136,8 +120,6 @@ function drawY1(){
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
     ctx.fillStyle = "red";
     ctx.fill();
-    ctx.strokeStyle = "red";
-    ctx.stroke();
 }
 drawR1();
     
@@ -157,8 +139,6 @@ function drawY2(){
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
     ctx.fillStyle = "yellow";
     ctx.fill();
-    ctx.strokeStyle = "yellow";
-    ctx.stroke();
 }
 drawY2();
     
@@ -175,8 +155,6 @@ function drawR2(){
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
     ctx.fillStyle = "red";
     ctx.fill();
-    ctx.strokeStyle = "red";
-    ctx.stroke();
 }
 drawR2();
     
@@ -194,8 +172,6 @@ function drawY3(){
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
     ctx.fillStyle = "yellow";
     ctx.fill();
-    ctx.strokeStyle = "yellow";
-    ctx.stroke();
 }
 drawY3();
         
@@ -212,8 +188,6 @@ function drawR3(){
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
     ctx.fillStyle = "red";
     ctx.fill();
-    ctx.strokeStyle = "red";
-    ctx.stroke();
 }
 drawR3();
             
@@ -231,8 +205,6 @@ function drawY4(){
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
     ctx.fillStyle = "yellow";
     ctx.fill();
-    ctx.strokeStyle = "yellow";
-    ctx.stroke();
 }
 drawY4();
             
@@ -249,8 +221,6 @@ function drawR4(){
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
     ctx.fillStyle = "red";
     ctx.fill();
-    ctx.strokeStyle = "red";
-    ctx.stroke();
 }
 drawR4();
 
@@ -270,8 +240,6 @@ function drawY5(){
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
     ctx.fillStyle = "yellow";
     ctx.fill();
-    ctx.strokeStyle = "yellow";
-    ctx.stroke();
 }
 drawY5();
     
@@ -288,8 +256,6 @@ drawY5();
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
     ctx.fillStyle = "red";
     ctx.fill();
-    ctx.strokeStyle = "red";
-    ctx.stroke();
 }
 drawR5();
     
@@ -308,8 +274,6 @@ function drawY6(){
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
     ctx.fillStyle = "yellow";
     ctx.fill();
-    ctx.strokeStyle = "yellow";
-    ctx.stroke();
 }
 drawY6();
     
@@ -325,10 +289,7 @@ function drawR6(){
     const radius = 80;
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
     ctx.fillStyle = "red";
-    ctx.fill();
-    ctx.strokeStyle = "red";
-    ctx.stroke();
-        
+    ctx.fill();     
 }
 drawR6();
     
@@ -346,8 +307,6 @@ function drawY7(){
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
     ctx.fillStyle = "yellow";
     ctx.fill();
-    ctx.strokeStyle = "yellow";
-    ctx.stroke();
 }
 drawY7();
         
@@ -364,8 +323,6 @@ function drawR7(){
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
     ctx.fillStyle = "red";
     ctx.fill();
-    ctx.strokeStyle = "red";
-    ctx.stroke();
 }
 drawR7();
             
@@ -384,8 +341,6 @@ function drawY8(){
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
     ctx.fillStyle = "yellow";
     ctx.fill();
-    ctx.strokeStyle = "yellow";
-    ctx.stroke();
 }
 drawY8();
             
@@ -402,8 +357,6 @@ function drawR8(){
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
     ctx.fillStyle = "red";
     ctx.fill();
-    ctx.strokeStyle = "red";
-    ctx.stroke();
 }
 drawR8();
 
@@ -422,8 +375,6 @@ function drawY9(){
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
     ctx.fillStyle = "yellow";
     ctx.fill();
-    ctx.strokeStyle = "yellow";
-    ctx.stroke();
 }
 drawY9();
 
@@ -440,8 +391,6 @@ function drawR9(){
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
     ctx.fillStyle = "red";
     ctx.fill();
-    ctx.strokeStyle = "red";
-    ctx.stroke();
 }
 drawR9();
 
@@ -460,8 +409,6 @@ function drawY10(){
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
     ctx.fillStyle = "yellow";
     ctx.fill();
-    ctx.strokeStyle = "yellow";
-    ctx.stroke();
 }
 drawY10();
 
@@ -478,8 +425,6 @@ function drawR10(){
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
     ctx.fillStyle = "red";
     ctx.fill();
-    ctx.strokeStyle = "red";
-    ctx.stroke();
 }
 drawR10();
 
@@ -498,8 +443,6 @@ function drawY11(){
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
     ctx.fillStyle = "yellow";
     ctx.fill();
-    ctx.strokeStyle = "yellow";
-    ctx.stroke();
 }
 drawY11();
     
@@ -516,8 +459,6 @@ function drawR11(){
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
     ctx.fillStyle = "red";
     ctx.fill();
-    ctx.strokeStyle = "red";
-    ctx.stroke();
 }
 drawR11();
         
@@ -536,8 +477,6 @@ function drawY12(){
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
     ctx.fillStyle = "yellow";
     ctx.fill();
-    ctx.strokeStyle = "yellow";
-    ctx.stroke();
 }
 drawY12();
         
@@ -554,8 +493,6 @@ function drawR12(){
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
     ctx.fillStyle = "red";
     ctx.fill();
-    ctx.strokeStyle = "red";
-    ctx.stroke();
 }
 drawR12();
 
@@ -592,6 +529,8 @@ function drawChop1(){
     ctx.lineTo(centerX - 165, centerY - 65);
     ctx.fillStyle = "black";
     ctx.fill();
+    ctx.strokeStyle = "black";
+    ctx.stroke();
 }
 drawChop1();
 
@@ -610,5 +549,43 @@ function drawChop2(){
     ctx.lineTo(centerX - 175, centerY - 55);
     ctx.fillStyle = "black";
     ctx.fill();
+    ctx.strokeStyle = "black";
+    ctx.stroke();
 }
 drawChop2();
+
+
+
+
+
+var myLink = document.getElementById('mylink');
+myLink.onclick = function(){
+
+var script = document.createElement("script");
+script.type = "text/javascript";
+script.src = "scripts/js/magenta.js"; 
+document.getElementsByTagName("head")[0].appendChild(script);
+return false;
+}   
+
+
+var myLink = document.getElementById('mylink2');
+myLink.onclick = function(){
+
+var script = document.createElement("script");
+script.type = "text/javascript";
+script.src = "scripts/js/yellow.js"; 
+document.getElementsByTagName("head")[0].appendChild(script);
+return false;
+}
+
+
+var myLink = document.getElementById('mylink3');
+myLink.onclick = function(){
+
+var script = document.createElement("script");
+script.type = "text/javascript";
+script.src = "scripts/js/cyan.js"; 
+document.getElementsByTagName("head")[0].appendChild(script);
+return false;
+}

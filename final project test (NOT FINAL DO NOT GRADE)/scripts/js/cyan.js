@@ -1,18 +1,21 @@
-function draw1(){
-    const canvas = document.getElementById("canvas");
+//-----------------------CYAN CIRCLE----------
+function drawC(){
+    const canvas = document.getElementById("canvas3");
     let ctx = canvas.getContext("2d");
-    canvas.style.backgroundColor = 'black';
     
     
     ctx.beginPath();
-    const centerX = canvas.width / 2;
-    const centerY = canvas.height / 2;
-    
-    const radius = 170;
-    
-    ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
-    ctx.fillStyle = "lightgreen";
+    const radius = 110;
+//------ROW 1
+    ctx.arc(0, 0, radius, 0, Math.PI * 2);
+    ctx.arc(450, 0, radius, 0, Math.PI * 2);
+//------ROW 2
+    ctx.arc(150, 200, radius, 0, Math.PI * 2);
+    ctx.arc(600, 200, radius, 0, Math.PI * 2);
+//------ROW 3
+    ctx.arc(300, 400, radius, 0, Math.PI * 2);
+
+    ctx.fillStyle = "rgb(0, 255, 255, 0.5)";
     ctx.fill();
-    ctx.stroke();
-    }
-    draw1();
+}
+drawC();
